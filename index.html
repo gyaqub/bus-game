@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London Bus Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="bus-cards">
+            <h2>Bus Numbers</h2>
+            <div class="card" draggable="true" id="bus-1" ondragstart="drag(event)">Bus 1</div>
+            <div class="card" draggable="true" id="bus-24" ondragstart="drag(event)">Bus 24</div>
+            <div class="card" draggable="true" id="bus-73" ondragstart="drag(event)">Bus 73</div>
+            <div class="card" draggable="true" id="bus-11" ondragstart="drag(event)">Bus 11</div>
+            <div class="card" draggable="true" id="bus-25" ondragstart="drag(event)">Bus 25</div>
+            <div class="card" draggable="true" id="bus-38" ondragstart="drag(event)">Bus 38</div>
+            <!-- Add more bus cards here -->
+        </div>
+        <div class="route-cards">
+            <h2>Routes</h2>
+            <div class="card" id="route-1" ondrop="drop(event)" ondragover="allowDrop(event)">Oxford Circus</div>
+            <div class="card" id="route-24" ondrop="drop(event)" ondragover="allowDrop(event)">Waterloo Station</div>
+            <div class="card" id="route-73" ondrop="drop(event)" ondragover="allowDrop(event)">Victoria Station</div>
+            <div class="card" id="route-11" ondrop="drop(event)" ondragover="allowDrop(event)">Fulham Broadway</div>
+            <div class="card" id="route-25" ondrop="drop(event)" ondragover="allowDrop(event)">Ilford</div>
+            <div class="card" id="route-38" ondrop="drop(event)" ondragover="allowDrop(event)">Clapton Pond</div>
+            <!-- Add more route cards here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
